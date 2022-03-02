@@ -29,6 +29,43 @@ html {
     100% {transform: translateY(0);}
 }
 
+.modal { 
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+} 
+
+.modal-content { 
+    background-color: rgba(233, 191, 133, 0.932);
+    margin: 5% auto;
+    padding: 1rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn { 
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+}
+
+.movie-poster-modal { 
+    height: 600px;
+}
+
 .movie-poster-container img {
     margin-top: 2rem;
     height: 500px;
